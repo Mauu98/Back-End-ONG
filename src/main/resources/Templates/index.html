@@ -3,32 +3,32 @@
 <head>
 
     <style>
-    .center {
-	text-align: center;
-	border: 0px solid green;
-}
+        .center {
+            text-align: center;
+            border: 0px solid green;
+        }
 
     </style>
 
     <style>
-    .left {
-	text-align: left;
-	display: flex;
-	margin: 5px;
-}
+        .left {
+            text-align: left;
+            display: flex;
+            margin: 5px;
+        }
 
 
     </style>
 
     <style>
-    .space {
-     margin: 45px;
-}
+        .space {
+            margin: 45px;
+        }
     </style>
 
     <style>
-        .footer{
-        background-color: #333;
+        .footer {
+            background-color: #333;
         }
     </style>
 
@@ -44,7 +44,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <img src="logo.jpg" alt="logo" width="150" height="50"/>
+            <img src="images/logo.jpg" alt="logo" width="150" height="50"/>
             <a class="navbar-brand" href="#"> Fundacion Zona Grises</a>
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -55,15 +55,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active"
-                                            aria-current="page" href="#">Inicio</a></li>
+                                            aria-current="page" href="http://localhost:1313/">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active"
-                                            aria-current="page" href="#">Nosotros</a></li>
+                                            aria-current="page" href="http://localhost:1313/organization/public">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link active"
                                             aria-current="page" href="#">Formas de ayudar</a></li>
                     <li class="nav-item"><a class="nav-link active"
                                             aria-current="page" href="#">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link active"
-                                            aria-current="page" href="#">Novedades</a></li>
+                                            aria-current="page" href="http://localhost:1313/news">Novedades</a></li>
                     </li>
                 </ul>
 
@@ -93,13 +93,13 @@
 </header>
 <div>
     <li>
-        <img src="slide.png" width="1900" height="330"/>
+        <img src="images/slide.png" width="1900" height="330"/>
     </li>
 </div>
 <hr>
 <center>
     <p>
-        <img src="logo.jpg" width="200" height="150" align="middle"/>
+        <img src="images/logo.jpg" width="200" height="150" align="middle"/>
     </p>
     <p>
     <h5>Todos podemos ayudar a alguien</h5>
@@ -108,22 +108,43 @@
 <div class="left container center">
     <!--Primera Imagen-->
     <div class="space">
-        <div class="imagen"><img src="novedades.png" width="300" height="250"></div>
+        <div class="imagen"><img src="images/novedades.png" width="300" height="250"></div>
         <div class="texto">Novedad 1</div>
     </div>
 
     <!--Segunda Imagen-->
     <div class="space">
-        <div><img src="novedades.png" width="300" height="250"></div>
+        <div><img src="images/novedades.png" width="300" height="250"></div>
         <div class="texto">Novedad 2</div>
     </div>
 
     <!--Tercera Imagen-->
     <div class="space">
-        <div class="imagen"><img src="novedades.png" width="300" height="250"></div>
+        <div class="imagen"><img src="images/novedades.png" width="300" height="250"></div>
         <div class="texto">Novedad 3</div>
     </div>
 </div>
+
+<div class="row" id="divNovedades">
+
+</div>
+
+<nav aria-label="Page navigation example" id="navNews">
+    <ul class="pagination justify-content-center">
+
+        <li class="page-item disabled">
+            <a class="page-link" href="http://localhost:1313/news?page=0&size=3" tabindex="-1"
+               aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="http://localhost:1313/news?page=1&size=3">1</a></li>
+        <li class="page-item"><a class="page-link" href="http://localhost:1313/news?page=2&size=3">2</a></li>
+        <li class="page-item"><a class="page-link" href="http://localhost:1313/news?page=3&size=3">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+
+    </ul>
+</nav>
 
 <div class="text-center">
     <em class="" style="font-size: 55px">¿Cómo nos podés ayudar?</em>
@@ -133,19 +154,22 @@
         <div class="col-md-4">
             <div class="card-body">
                 <h5 class="card-title">1) Donaciones/Colectas</h5>
-                <p class="card-text">Llevamos a cabo durante el año, cuatro colectas de alimentos, de elementos de higiene y ropa.</p>
+                <p class="card-text">Llevamos a cabo durante el año, cuatro colectas de alimentos, de elementos de
+                    higiene y ropa.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card-body">
                 <h5 class="card-title">2) Regalos Especiales</h5>
-                <p class="card-text">Contamos con un proyecto que convoca regalos personalizados para todos los niños.</p>
+                <p class="card-text">Contamos con un proyecto que convoca regalos personalizados para todos los
+                    niños.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card-body">
                 <h5 class="card-title">3) Madrinaje/Padrinaje</h5>
-                <p class="card-text">Apuntamos a desarrollar madrinas y padrinos para las familias de cada integrante de la fundación.</p>
+                <p class="card-text">Apuntamos a desarrollar madrinas y padrinos para las familias de cada integrante de
+                    la fundación.</p>
             </div>
         </div>
     </div>
@@ -153,17 +177,20 @@
 </div>
 
 
-<footer class="footer"><hr/>
+<footer class="footer">
+    <hr/>
     <div class="left container center">
 
         <div class="space">
-            <div><img src="logo.jpg" width="200" height="100"></div>
+            <div><img src="images/logo.jpg" width="200" height="100"></div>
             <div class="text-white">Fundación Zonas Grises</div>
         </div>
 
         <div class="space">
-            <div class="Redes Sociales"><h4 class="text-white">Nuestras Redes</h4><a href="https://projects.spring.io/spring-boot/">Facebook</a></div>
-            <div class="Redes Sociales"><a href="https://www.instagram.com/fundacionzonasgrises/?hl=es">Instagram</a></div>
+            <div class="Redes Sociales Facebook"><h4 class="text-white">Nuestras Redes</h4><a
+                    href="https://www.facebook.com/fundacionzonasgrises/">Facebook</a></div>
+            <div class="Redes Sociales Instagram"><a href="https://www.instagram.com/fundacionzonasgrises/?hl=es">Instagram</a>
+            </div>
         </div>
 
         <div class="space">
@@ -172,7 +199,8 @@
         </div>
 
         <div class="space">
-            <div class="Organizacion"><h4 class="text-white">Nuestra Organización</h4><a href="#">Sobre Nosotros</a></div>
+            <div class="Organizacion"><h4 class="text-white">Nuestra Organización</h4><a href="#">Sobre Nosotros</a>
+            </div>
             <div class="Organizacion"><a href="#">Contacto</a></div>
             <div class="Organizacion"><a href="#">Formas de Ayudar</a></div>
         </div>
@@ -181,6 +209,8 @@
 
 </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
